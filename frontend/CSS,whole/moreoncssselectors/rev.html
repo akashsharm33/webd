@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      .box:first-child{
+        background-color: red;
+      }
+       
+        .box:nth-child(even){
+        background-color: aqua;
+        }
+        .box:nth-last-child(1){
+            background-color: blue;
+        }
+        .boxes::before{
+            content: "yoy oyoyoyoy";
+        }
+        .boxes::after{
+            content: "yoy oyoyoyoy";
+        }
+        ::selection{
+            background-color: blueviolet;
+            color: pink;
+        }
+        input::placeholder{
+            color: gray;
+            background-color: chocolate;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+  <div data-color="primary" class="box">i am box</div>
+  <div class="box">i am box</div>
+  <div class="box">i am box</div>
+  <input type="text" placeholder="type your name here plzz">
+
+
+    </div>
+    
+</body>
+</html>
